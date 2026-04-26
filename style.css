@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb, #38bdf8);
+  color: white;
+  padding: 48px 7%;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 8px 0;
+}
+
+.subtitle {
+  max-width: 760px;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+.container {
+  width: min(1180px, 92%);
+  margin: 32px auto;
+}
+
+section {
+  margin-bottom: 28px;
+}
+
+h2 {
+  margin: 0 0 16px;
+  color: #0f172a;
+}
+
+h3 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.note-card,
+.panel,
+.kpi-card {
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.note-card {
+  padding: 20px 24px;
+  line-height: 1.7;
+  border-left: 6px solid #2563eb;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.kpi-card {
+  padding: 22px;
+}
+
+.kpi-label {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.kpi-value {
+  font-size: 34px;
+  font-weight: 800;
+  color: #1e40af;
+}
+
+.kpi-desc {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.panel {
+  padding: 24px;
+}
+
+canvas {
+  max-height: 330px;
+}
+
+.insight-panel p {
+  line-height: 1.8;
+  margin: 0 0 16px;
+}
+
+.insight-title {
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-top: 14px;
+}
+
+.recommendation-list {
+  display: grid;
+  gap: 14px;
+}
+
+.recommendation-item {
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: #eff6ff;
+  border-left: 5px solid #2563eb;
+  line-height: 1.7;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  padding: 24px;
+}
+
+@media (max-width: 900px) {
+  .kpi-grid,
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
