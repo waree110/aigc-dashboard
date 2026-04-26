@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIGC Learning Progress Dashboard</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">AIGC Workforce Learning & Development</p>
+      <h1>AIGC Learning Progress Dashboard</h1>
+      <p class="subtitle">
+        ภาพรวมการพัฒนาสมรรถนะ การเรียนรู้ออนไลน์ และข้อเสนอแนะเชิงยุทธศาสตร์
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="note-card">
+      <strong>Dashboard Purpose</strong>
+      <p>
+        Dashboard นี้จัดทำขึ้นเพื่อสรุปภาพรวมการพัฒนาบุคลากรด้าน AIGC
+        และใช้ประกอบการออกแบบกิจกรรมพัฒนาต่อเนื่อง
+        ไม่ได้มีวัตถุประสงค์เพื่อจัดอันดับหรือเปรียบเทียบหน่วยงานใดหน่วยงานหนึ่ง
+      </p>
+    </section>
+
+    <section>
+      <h2>Project Overview</h2>
+      <div id="kpiCards" class="kpi-grid"></div>
+    </section>
+
+    <section class="grid-2">
+      <div class="panel">
+        <h2>Competency Readiness</h2>
+        <canvas id="competencyChart"></canvas>
+      </div>
+
+      <div class="panel">
+        <h2>Development Areas</h2>
+        <canvas id="developmentChart"></canvas>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="panel">
+        <h2>Learning Impact</h2>
+        <canvas id="learningChart"></canvas>
+      </div>
+
+      <div class="panel insight-panel">
+        <h2>AI Insight</h2>
+        <div id="aiInsight"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Learning Evidence Themes</h2>
+      <div class="grid-3">
+        <div class="panel">
+          <h3>Key Learning</h3>
+          <canvas id="keyLearningChart"></canvas>
+        </div>
+
+        <div class="panel">
+          <h3>Application</h3>
+          <canvas id="applicationChart"></canvas>
+        </div>
+
+        <div class="panel">
+          <h3>Future Learning Needs</h3>
+          <canvas id="futureLearningChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Strategic Recommendations</h2>
+      <div id="recommendations" class="recommendation-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Generated for AIGC Project Progress Monitoring</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
