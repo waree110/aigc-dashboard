@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>AIGC Learning Progress Dashboard</title>
 
   <link rel="stylesheet" href="style.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
   <header class="hero">
-    <div>
+    <div class="hero-inner">
       <p class="eyebrow">AIGC Workforce Learning & Development</p>
       <h1>AIGC Learning Progress Dashboard</h1>
       <p class="subtitle">
@@ -21,6 +23,7 @@
   </header>
 
   <main class="container">
+
     <section class="note-card">
       <strong>Dashboard Purpose</strong>
       <p>
@@ -31,44 +34,66 @@
     </section>
 
     <section>
-      <h2>Project Overview</h2>
+      <div class="section-title">
+        <h2>Project Overview</h2>
+        <p>ตัวชี้วัดภาพรวมของโครงการ</p>
+      </div>
       <div id="kpiCards" class="kpi-grid"></div>
     </section>
 
-  <section class="grid-2">
-  <div class="panel">
-    <h2>Competency Readiness</h2>
-    <canvas id="competencyChart"></canvas>
-  </div>
+    <section class="grid-2">
+      <div class="panel">
+        <h2>Competency Readiness</h2>
+        <p class="chart-note">
+          ค่าเฉลี่ยสมรรถนะ 3 ด้าน ได้แก่ Digital Literacy, AI Literacy และ Global Citizenship
+        </p>
+        <div class="chart-box">
+          <canvas id="competencyChart"></canvas>
+        </div>
+      </div>
 
-  <div class="panel">
-    <h2>Lowest Skill Distribution</h2>
-    <p class="chart-note">
-      จำนวนผู้ประเมินที่มีสมรรถนะด้านนั้นเป็นคะแนนต่ำที่สุดของตนเอง ไม่ใช่ค่าเฉลี่ยคะแนนของแต่ละด้าน
-    </p>
-    <canvas id="developmentChart"></canvas>
-  </div>
-</section>
-
-<section class="grid-2">
-  <div class="panel">
-    <h2>Assessment Participants by Group</h2>
-    <canvas id="assessmentGroupChart"></canvas>
-  </div>
-
-  <div class="panel">
-    <h2>Online Learners by Group</h2>
-    <canvas id="learningGroupChart"></canvas>
-  </div>
-</section>
+      <div class="panel">
+        <h2>Lowest Skill Distribution</h2>
+        <p class="chart-note">
+          จำนวนผู้ประเมินที่มีสมรรถนะด้านนั้นเป็นคะแนนต่ำที่สุดของตนเอง ไม่ใช่ค่าเฉลี่ยคะแนนของแต่ละด้าน
+        </p>
+        <div class="chart-box">
+          <canvas id="developmentChart"></canvas>
+        </div>
+      </div>
+    </section>
 
     <section class="grid-2">
       <div class="panel">
-       <h2>Self-Reported Learning Progress</h2>
-<p class="chart-note">
-  ข้อมูลก่อนและหลังเรียนเป็นการประเมินตนเองของผู้เรียน จึงควรตีความเป็นการรับรู้ความก้าวหน้า
-</p>
-<canvas id="learningChart"></canvas>
+        <h2>Assessment Participants by Group</h2>
+        <p class="chart-note">
+          จำนวนผู้เข้าประเมินสมรรถนะ จำแนกตามกลุ่มผู้เข้าร่วม
+        </p>
+        <div class="chart-box">
+          <canvas id="assessmentGroupChart"></canvas>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Online Learners by Group</h2>
+        <p class="chart-note">
+          จำนวนผู้เรียนรู้ออนไลน์ จำแนกตามกลุ่มผู้เข้าร่วม
+        </p>
+        <div class="chart-box">
+          <canvas id="learningGroupChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="panel">
+        <h2>Self-Reported Learning Progress</h2>
+        <p class="chart-note">
+          ข้อมูลก่อนและหลังเรียนเป็นการประเมินตนเองของผู้เรียน จึงควรตีความเป็นการรับรู้ความก้าวหน้า
+        </p>
+        <div class="chart-box">
+          <canvas id="learningChart"></canvas>
+        </div>
       </div>
 
       <div class="panel insight-panel">
@@ -78,21 +103,31 @@
     </section>
 
     <section>
-      <h2>Learning Evidence Themes</h2>
+      <div class="section-title">
+        <h2>Learning Evidence Themes</h2>
+        <p>ประเด็นที่พบจากหลักฐานการเรียนรู้และคำตอบปลายเปิด</p>
+      </div>
+
       <div class="grid-3">
         <div class="panel">
           <h3>Key Learning</h3>
-          <canvas id="keyLearningChart"></canvas>
+          <div class="chart-box small">
+            <canvas id="keyLearningChart"></canvas>
+          </div>
         </div>
 
         <div class="panel">
           <h3>Application</h3>
-          <canvas id="applicationChart"></canvas>
+          <div class="chart-box small">
+            <canvas id="applicationChart"></canvas>
+          </div>
         </div>
 
         <div class="panel">
           <h3>Future Learning Needs</h3>
-          <canvas id="futureLearningChart"></canvas>
+          <div class="chart-box small">
+            <canvas id="futureLearningChart"></canvas>
+          </div>
         </div>
       </div>
     </section>
@@ -101,6 +136,7 @@
       <h2>Strategic Recommendations</h2>
       <div id="recommendations" class="recommendation-list"></div>
     </section>
+
   </main>
 
   <footer>
