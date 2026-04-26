@@ -1,0 +1,211 @@
+{
+  "overview": {
+    "Assessment Participants": {
+      "value": 244,
+      "description": "จำนวนผู้เข้าประเมินสมรรถนะทั้งหมด",
+      "sort_order": 1
+    },
+    "Online Learners": {
+      "value": 255,
+      "description": "จำนวนผู้เรียนรู้ออนไลน์ทั้งหมด",
+      "sort_order": 2
+    },
+    "Learning Evidence Records": {
+      "value": 266,
+      "description": "จำนวนรายการหลักฐานการเรียนรู้",
+      "sort_order": 3
+    },
+    "Departments Covered": {
+      "value": 10,
+      "description": "จำนวนหน่วยงานที่มีข้อมูลในโครงการ",
+      "sort_order": 4
+    },
+    "Overall Competency Average": {
+      "value": 25.43,
+      "description": "ค่าเฉลี่ยสมรรถนะรวม",
+      "sort_order": 5
+    },
+    "Average Learning Improvement": {
+      "value": 1.85,
+      "description": "ค่าเฉลี่ยพัฒนาการหลังเรียน",
+      "sort_order": 6
+    }
+  },
+  "competency": [
+    {
+      "label": "Digital Literacy",
+      "value": 24.75,
+      "description": "ค่าเฉลี่ยสมรรถนะด้าน Digital Literacy",
+      "sort_order": 11
+    },
+    {
+      "label": "AI Literacy",
+      "value": 26.39,
+      "description": "ค่าเฉลี่ยสมรรถนะด้าน AI Literacy",
+      "sort_order": 12
+    },
+    {
+      "label": "Global Citizenship",
+      "value": 25.14,
+      "description": "ค่าเฉลี่ยสมรรถนะด้าน Global Citizenship",
+      "sort_order": 13
+    }
+  ],
+  "learning": [
+    {
+      "label": "Average Before Level",
+      "value": 2.23,
+      "description": "ค่าเฉลี่ยระดับความรู้ก่อนเรียน",
+      "sort_order": 21
+    },
+    {
+      "label": "Average After Level",
+      "value": 4.08,
+      "description": "ค่าเฉลี่ยระดับความรู้หลังเรียน",
+      "sort_order": 22
+    },
+    {
+      "label": "Average Improvement",
+      "value": 1.85,
+      "description": "ค่าเฉลี่ยการพัฒนาหลังเรียน",
+      "sort_order": 23
+    },
+    {
+      "label": "Improved Learners (%)",
+      "value": 93.98,
+      "description": "ร้อยละของผู้เรียนที่มีระดับหลังเรียนสูงกว่าก่อนเรียน",
+      "sort_order": 24
+    }
+  ],
+  "developmentArea": [
+    {
+      "label": "Digital Literacy",
+      "value": 136,
+      "description": "จำนวนผู้ที่มี Digital Literacy เป็นด้านที่ควรพัฒนา",
+      "sort_order": 31
+    },
+    {
+      "label": "AI Literacy",
+      "value": 36,
+      "description": "จำนวนผู้ที่มี AI Literacy เป็นด้านที่ควรพัฒนา",
+      "sort_order": 32
+    },
+    {
+      "label": "Global Citizenship",
+      "value": 72,
+      "description": "จำนวนผู้ที่มี Global Citizenship เป็นด้านที่ควรพัฒนา",
+      "sort_order": 33
+    }
+  ],
+  "aiInsight": {
+    "Executive Summary": {
+      "value": "ข้อมูลภาพรวมสะท้อนว่าโครงการ AIGC สามารถสร้างการมีส่วนร่วมของบุคลากรได้ในระดับดี โดยมีผู้เข้าประเมินสมรรถนะ 244 คน ผู้เรียนรู้ออนไลน์ 255 คน และมีหลักฐานการเรียนรู้ 266 รายการ แสดงให้เห็นถึงการขับเคลื่อนการพัฒนาสมรรถนะด้าน Digital Literacy, AI Literacy และ Global Citizenship อย่างต่อเนื่องในระดับองค์กร",
+      "description": "ข้อความสรุปภาพรวมโครงการสำหรับผู้บริหาร",
+      "sort_order": 101
+    },
+    "Competency Insight": {
+      "value": "ผลการประเมินสมรรถนะภาพรวมพบว่าค่าเฉลี่ยทั้ง 3 ด้านอยู่ในระดับใกล้เคียงกัน โดย AI Literacy มีค่าเฉลี่ยสูงสุด รองลงมาคือ Global Citizenship และ Digital Literacy ข้อมูลนี้สามารถใช้เป็นฐานในการออกแบบกิจกรรมพัฒนาบุคลากรที่ต่อยอดจากความพร้อมเดิม และเสริมทักษะที่จำเป็นต่อการประยุกต์ใช้ AIGC ในงานจริง",
+      "description": "ข้อความวิเคราะห์ภาพรวมสมรรถนะ",
+      "sort_order": 102
+    },
+    "Learning Impact Insight": {
+      "value": "ผลการเรียนรู้ออนไลน์สะท้อนพัฒนาการที่ชัดเจน โดยค่าเฉลี่ยระดับความรู้ก่อนเรียนอยู่ที่ 2.23 และเพิ่มขึ้นเป็น 4.08 หลังเรียน คิดเป็นค่าเฉลี่ยการพัฒนา 1.85 ระดับ อีกทั้งมีผู้เรียนที่มีระดับหลังเรียนสูงกว่าก่อนเรียนถึง 93.98% แสดงให้เห็นว่าระบบการเรียนรู้ออนไลน์สามารถสนับสนุนการพัฒนาทักษะของบุคลากรได้อย่างมีประสิทธิภาพ",
+      "description": "ข้อความวิเคราะห์ผลลัพธ์ก่อนและหลังเรียน",
+      "sort_order": 103
+    }
+  },
+  "recommendations": [
+    {
+      "label": "Strategic Recommendation 1",
+      "value": "ควรพัฒนาหลักสูตรต่อเนื่องด้าน AI for Work เพื่อสนับสนุนให้บุคลากรสามารถนำ AI ไปใช้กับงานประจำได้อย่างเป็นรูปธรรม",
+      "description": "ข้อเสนอแนะเชิงยุทธศาสตร์ข้อที่ 1",
+      "sort_order": 111
+    },
+    {
+      "label": "Strategic Recommendation 2",
+      "value": "ควรจัดทำ Learning Path ตามระดับความพร้อมของบุคลากร เพื่อให้การพัฒนาทักษะมีความต่อเนื่องและเหมาะสมกับพื้นฐานของแต่ละกลุ่ม",
+      "description": "ข้อเสนอแนะเชิงยุทธศาสตร์ข้อที่ 2",
+      "sort_order": 112
+    },
+    {
+      "label": "Strategic Recommendation 3",
+      "value": "ควรส่งเสริมการแลกเปลี่ยนตัวอย่างการประยุกต์ใช้ AI ในงานจริง เพื่อสร้างชุมชนการเรียนรู้และขยายผลภายในองค์กร",
+      "description": "ข้อเสนอแนะเชิงยุทธศาสตร์ข้อที่ 3",
+      "sort_order": 113
+    },
+    {
+      "label": "Strategic Recommendation 4",
+      "value": "ควรใช้ข้อมูลจาก Dashboard เป็นเครื่องมือประกอบการวางแผนกิจกรรมพัฒนาบุคลากรในระยะต่อไป โดยเน้นการสนับสนุนเชิงระบบมากกว่าการเปรียบเทียบรายหน่วยงาน",
+      "description": "ข้อเสนอแนะเชิงยุทธศาสตร์ข้อที่ 4",
+      "sort_order": 114
+    }
+  ],
+  "themes": {
+    "keyLearning": [
+      {
+        "label": "AI for Work",
+        "value": 61,
+        "description": "ผู้เรียนรู้เรื่องการใช้ AI เพื่อสนับสนุนการทำงาน",
+        "sort_order": 201
+      },
+      {
+        "label": "Digital Productivity",
+        "value": 72,
+        "description": "ผู้เรียนรู้เรื่องเครื่องมือดิจิทัลเพื่อเพิ่มประสิทธิภาพการทำงาน",
+        "sort_order": 202
+      },
+      {
+        "label": "Data & Dashboard",
+        "value": 90,
+        "description": "ผู้เรียนรู้เรื่องข้อมูล การวิเคราะห์ และ Dashboard",
+        "sort_order": 203
+      },
+      {
+        "label": "Responsible AI",
+        "value": 14,
+        "description": "ผู้เรียนรู้เรื่องจริยธรรม ความปลอดภัย และการใช้ AI อย่างรับผิดชอบ",
+        "sort_order": 204
+      }
+    ],
+    "application": [
+      {
+        "label": "Work Process Improvement",
+        "value": 247,
+        "description": "การนำความรู้ไปปรับปรุงกระบวนการทำงาน",
+        "sort_order": 211
+      },
+      {
+        "label": "Communication & Content Creation",
+        "value": 24,
+        "description": "การนำความรู้ไปใช้ด้านการสื่อสาร การเขียน และการสร้างเนื้อหา",
+        "sort_order": 212
+      },
+      {
+        "label": "Data Analysis & Reporting",
+        "value": 171,
+        "description": "การนำความรู้ไปใช้วิเคราะห์ข้อมูลและจัดทำรายงาน",
+        "sort_order": 213
+      }
+    ],
+    "futureLearning": [
+      {
+        "label": "Prompt Engineering",
+        "value": 11,
+        "description": "ความต้องการเรียนรู้ด้านการเขียนคำสั่ง AI",
+        "sort_order": 221
+      },
+      {
+        "label": "Data Analysis with AI",
+        "value": 66,
+        "description": "ความต้องการเรียนรู้ด้านการวิเคราะห์ข้อมูลด้วย AI",
+        "sort_order": 222
+      },
+      {
+        "label": "Dashboard & Automation",
+        "value": 13,
+        "description": "ความต้องการเรียนรู้ด้าน Dashboard และ Automation",
+        "sort_order": 223
+      }
+    ]
+  }
+}
