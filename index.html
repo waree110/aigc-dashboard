@@ -7,249 +7,217 @@
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
-  <div class="tech-bg"></div>
-
-  <main class="page-shell">
-    <section class="hero-panel glass">
-      <div class="hero-text">
-        <p class="eyebrow">AIGC WORKFORCE LEARNING & DEVELOPMENT</p>
-        <h1>Assessment Frameworks & AIGC Dashboard</h1>
-        <p class="hero-subtitle">
-          ภาพรวมกรอบสมรรถนะ การประเมิน การเรียนรู้ออนไลน์ และข้อเสนอแนะเชิงกลยุทธ์
-        </p>
-      </div>
-    </section>
-
-    <section class="top-summary">
-      <div class="summary-card glass">
-        <div class="summary-title">Target Groups</div>
-        <div class="summary-value">4</div>
-        <div class="summary-sub">Groups</div>
-      </div>
-
-      <div class="summary-card glass">
-        <div class="summary-title">Assessment Domains</div>
-        <div class="summary-value">3</div>
-        <div class="summary-sub">Domains</div>
-      </div>
-
-      <div class="summary-card glass">
-        <div class="summary-title">Core Frameworks Used</div>
-        <div class="summary-value">9</div>
-        <div class="summary-sub">Frameworks</div>
-      </div>
-
-      <div class="summary-card glass">
-        <div class="summary-title">Design Logic</div>
-        <div class="summary-sub big-line">Role-based +</div>
-        <div class="summary-sub">Standards-based</div>
-      </div>
-
-      <div class="summary-card glass">
-        <div class="summary-title">Dashboard Purpose</div>
-        <div class="summary-sub big-line">AI-driven</div>
-        <div class="summary-sub">Monitoring & Insight</div>
-      </div>
-    </section>
-
-    <section class="main-layout">
-      <div class="left-stack">
-        <div class="panel glass mini-panel">
-          <div class="panel-title">Target Groups</div>
-          <div class="panel-note">
-            จำนวนผู้เข้าร่วมจำแนกตามกลุ่มเป้าหมาย
-          </div>
-          <div class="chart-box small-box">
-            <canvas id="targetGroupsChart"></canvas>
-          </div>
-        </div>
-
-        <div class="panel glass mini-panel">
-          <div class="panel-title">Assessment Domains</div>
-          <div class="panel-note">
-            สัดส่วนค่าเฉลี่ยสมรรถนะ 3 ด้าน
-          </div>
-          <div class="chart-box small-box">
-            <canvas id="domainChart"></canvas>
-          </div>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">AI</div>
+        <div>
+          <h1>AIGC</h1>
+          <p>Executive Dashboard</p>
         </div>
       </div>
 
-      <div class="center-main">
-        <div class="panel glass matrix-panel">
-          <div class="matrix-header">MAIN MATRIX</div>
+      <nav class="menu">
+        <a href="#snapshot" class="active">ภาพรวม | Snapshot</a>
+        <a href="#framework">กรอบสมรรถนะ | Framework</a>
+        <a href="#participation">การมีส่วนร่วม | Participation</a>
+        <a href="#learning">การเรียนรู้ | Learning</a>
+        <a href="#insight">ข้อเสนอแนะ | Insight</a>
+      </nav>
+    </aside>
 
-          <div class="matrix-grid">
-            <div class="matrix-col">
-              <div class="matrix-col-title">Digital Literacy</div>
+    <main class="main">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">AIGC WORKFORCE INTELLIGENCE</p>
+          <h2>AIGC Executive Dashboard</h2>
+          <p>
+            สรุปภาพรวมการประเมินสมรรถนะ การเรียนรู้ออนไลน์ และข้อเสนอแนะเชิงกลยุทธ์
+            เพื่อสนับสนุนการพัฒนาบุคลากรด้าน AIGC
+          </p>
+        </div>
 
-              <div class="matrix-box">
-                <div class="matrix-box-label">Core Frameworks</div>
-                <div class="matrix-box-text">
-                  DigCompEdu, DigComp, JISC Digital Capability, ISTE
+        <div class="hero-badge">
+          <span>AI-Driven</span>
+          <strong>Learning & Competency Insight</strong>
+        </div>
+      </section>
+
+      <section id="snapshot" class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">EXECUTIVE SNAPSHOT</p>
+            <h3>ภาพรวมการขับเคลื่อนโครงการ</h3>
+          </div>
+        </div>
+
+        <div id="snapshotCards" class="snapshot-grid"></div>
+      </section>
+
+      <section id="framework" class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">ASSESSMENT FRAMEWORKS</p>
+            <h3>กรอบสมรรถนะและตรรกะการออกแบบ</h3>
+          </div>
+        </div>
+
+        <div id="frameworkCards" class="framework-grid"></div>
+
+        <div class="framework-layout">
+          <div class="panel matrix-panel">
+            <div class="panel-title center">MAIN MATRIX</div>
+
+            <div class="matrix">
+              <div class="matrix-column">
+                <h4>Digital Literacy</h4>
+                <div class="matrix-box">
+                  <strong>Focus</strong>
+                  <p>การใช้เครื่องมือดิจิทัล การจัดการข้อมูล การสื่อสาร และการทำงานร่วมกับเทคโนโลยี</p>
+                </div>
+                <div class="matrix-box">
+                  <strong>Work Application</strong>
+                  <p>เพิ่มประสิทธิภาพงาน สนับสนุนการทำงานด้วยข้อมูล และพัฒนากระบวนการทำงาน</p>
                 </div>
               </div>
 
-              <div class="matrix-box">
-                <div class="matrix-box-label">Competency Focus</div>
-                <div class="matrix-box-text">
-                  การใช้เครื่องมือดิจิทัล การจัดการข้อมูล การสื่อสาร การทำงานร่วมกัน และการใช้เทคโนโลยีอย่างมั่นใจ
+              <div class="matrix-column">
+                <h4>AI Literacy</h4>
+                <div class="matrix-box">
+                  <strong>Focus</strong>
+                  <p>การเข้าใจ AI การประยุกต์ใช้ AI กับงานจริง จริยธรรม ความปลอดภัย และความน่าเชื่อถือ</p>
+                </div>
+                <div class="matrix-box">
+                  <strong>Work Application</strong>
+                  <p>ใช้ AI สนับสนุนการคิด วิเคราะห์ สรุป สร้างเนื้อหา และช่วยตัดสินใจอย่างรับผิดชอบ</p>
                 </div>
               </div>
 
-              <div class="matrix-box">
-                <div class="matrix-box-label">Design Emphasis</div>
-                <div class="matrix-box-text">
-                  Practical use in work, digital workflow, productivity, data-informed work
+              <div class="matrix-column">
+                <h4>Global Citizenship</h4>
+                <div class="matrix-box">
+                  <strong>Focus</strong>
+                  <p>ความรับผิดชอบ ความเข้าใจความหลากหลาย จริยธรรม และการทำงานในบริบทสากล</p>
                 </div>
-              </div>
-            </div>
-
-            <div class="matrix-col">
-              <div class="matrix-col-title">AI Literacy</div>
-
-              <div class="matrix-box">
-                <div class="matrix-box-label">Core Frameworks</div>
-                <div class="matrix-box-text">
-                  UNESCO AI CFT, DEC AI Literacy, ETHICAL AI Principles
-                </div>
-              </div>
-
-              <div class="matrix-box">
-                <div class="matrix-box-label">Competency Focus</div>
-                <div class="matrix-box-text">
-                  การเข้าใจ AI การประยุกต์ใช้ในงาน จริยธรรม ความปลอดภัย ความน่าเชื่อถือ และการใช้ AI อย่างรับผิดชอบ
-                </div>
-              </div>
-
-              <div class="matrix-box">
-                <div class="matrix-box-label">Design Emphasis</div>
-                <div class="matrix-box-text">
-                  Human-centered AI, responsible use, application for work and decision support
-                </div>
-              </div>
-            </div>
-
-            <div class="matrix-col">
-              <div class="matrix-col-title">Global Citizenship</div>
-
-              <div class="matrix-box">
-                <div class="matrix-box-label">Core Frameworks</div>
-                <div class="matrix-box-text">
-                  UNESCO GCED, global competence, ethical & social awareness
-                </div>
-              </div>
-
-              <div class="matrix-box">
-                <div class="matrix-box-label">Competency Focus</div>
-                <div class="matrix-box-text">
-                  ความเข้าใจความหลากหลาย การคิดเชิงจริยธรรม ความรับผิดชอบต่อสังคม และการทำงานในโลกดิจิทัลที่เชื่อมโยงกัน
-                </div>
-              </div>
-
-              <div class="matrix-box">
-                <div class="matrix-box-label">Design Emphasis</div>
-                <div class="matrix-box-text">
-                  Values, ethics, inclusion, sustainability, social responsibility
+                <div class="matrix-box">
+                  <strong>Work Application</strong>
+                  <p>สร้างวัฒนธรรมการใช้เทคโนโลยีอย่างมีคุณค่า ปลอดภัย และคำนึงถึงผลกระทบต่อสังคม</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="mini-chart-area">
-            <div class="mini-chart-title">Competency Snapshot</div>
-            <div class="chart-box mini-bottom-chart">
-              <canvas id="miniCompetencyChart"></canvas>
+          <div class="panel">
+            <div class="panel-title">Competency Readiness</div>
+            <p class="note">ค่าเฉลี่ยสมรรถนะ 3 ด้านจากข้อมูลการประเมิน</p>
+            <div class="chart-box">
+              <canvas id="competencyChart"></canvas>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="right-stack">
-        <div class="panel glass focus-panel">
-          <div class="panel-title">Assessment Design Focus</div>
-          <div class="panel-note">
-            ภาพรวมสมรรถนะที่ใช้เป็นฐานในการออกแบบการพัฒนา
-          </div>
-          <div class="chart-box radar-box">
-            <canvas id="focusRadarChart"></canvas>
-          </div>
-
-          <div class="focus-legend">
-            <div>• Role-based assessment</div>
-            <div>• Standards-based design</div>
-            <div>• Competency-informed development</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="overview-section">
-      <div class="section-title">Project Overview</div>
-      <div id="kpiCards" class="kpi-grid"></div>
-    </section>
-
-    <section class="dual-section">
-      <div class="panel glass">
-        <div class="panel-title">Self-Reported Learning Progress</div>
-        <div class="panel-note">
-          ข้อมูลก่อนและหลังเรียนเป็นการประเมินตนเองของผู้เรียน
-        </div>
-        <div class="chart-box mid-box">
-          <canvas id="learningChart"></canvas>
-        </div>
-      </div>
-
-      <div class="panel glass">
-        <div class="panel-title">Development Areas</div>
-        <div class="panel-note">
-          ด้านที่ผู้ประเมินมีแนวโน้มต้องการการพัฒนาเพิ่มเติม
-        </div>
-        <div class="chart-box mid-box">
-          <canvas id="developmentChart"></canvas>
-        </div>
-      </div>
-    </section>
-
-    <section class="theme-section">
-      <div class="section-title">Learning Evidence Themes</div>
-      <div class="theme-grid">
-        <div class="panel glass">
-          <div class="panel-title">Key Learning</div>
-          <div class="chart-box theme-box">
-            <canvas id="keyLearningChart"></canvas>
+      <section id="participation" class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">PARTICIPATION COVERAGE</p>
+            <h3>ภาพรวมการมีส่วนร่วมตามกลุ่มเป้าหมาย</h3>
           </div>
         </div>
 
-        <div class="panel glass">
-          <div class="panel-title">Application</div>
-          <div class="chart-box theme-box">
-            <canvas id="applicationChart"></canvas>
+        <div class="grid-2">
+          <div class="panel">
+            <div class="panel-title">Assessment Participants by Group</div>
+            <p class="note">จำนวนผู้เข้าประเมินสมรรถนะ จำแนกตามกลุ่ม</p>
+            <div class="chart-box">
+              <canvas id="assessmentGroupChart"></canvas>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-title">Online Learners by Group</div>
+            <p class="note">จำนวนผู้เรียนรู้ออนไลน์ จำแนกตามกลุ่ม</p>
+            <div class="chart-box">
+              <canvas id="learningGroupChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="learning" class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">LEARNING PROGRESS</p>
+            <h3>พัฒนาการการเรียนรู้และหลักฐานเชิงประเด็น</h3>
           </div>
         </div>
 
-        <div class="panel glass">
-          <div class="panel-title">Future Learning Needs</div>
-          <div class="chart-box theme-box">
-            <canvas id="futureLearningChart"></canvas>
+        <div class="grid-2">
+          <div class="panel">
+            <div class="panel-title">Self-Reported Learning Progress</div>
+            <p class="note">ข้อมูลก่อนและหลังเรียนเป็นการประเมินตนเองของผู้เรียน</p>
+            <div class="chart-box">
+              <canvas id="learningChart"></canvas>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-title">Lowest Skill Distribution</div>
+            <p class="note">จำนวนผู้ประเมินที่มีสมรรถนะด้านนั้นเป็นคะแนนต่ำที่สุดของตนเอง</p>
+            <div class="chart-box">
+              <canvas id="developmentChart"></canvas>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="bottom-section">
-      <div class="panel glass">
-        <div class="panel-title">AI Insight</div>
-        <div id="aiInsight" class="insight-list"></div>
-      </div>
+        <div class="theme-grid">
+          <div class="panel">
+            <div class="panel-title">Key Learning Themes</div>
+            <div class="chart-box small">
+              <canvas id="keyLearningChart"></canvas>
+            </div>
+          </div>
 
-      <div class="panel glass">
-        <div class="panel-title">Strategic Recommendations</div>
-        <div id="recommendations" class="recommendation-list"></div>
-      </div>
-    </section>
-  </main>
+          <div class="panel">
+            <div class="panel-title">Application Themes</div>
+            <div class="chart-box small">
+              <canvas id="applicationChart"></canvas>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-title">Future Learning Needs</div>
+            <div class="chart-box small">
+              <canvas id="futureLearningChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="insight" class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">AI INSIGHT & STRATEGY</p>
+            <h3>ข้อค้นพบและข้อเสนอแนะเชิงยุทธศาสตร์</h3>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="panel">
+            <div class="panel-title">AI Insight</div>
+            <div id="insightList" class="text-list"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-title">Strategic Recommendations</div>
+            <div id="recommendationList" class="text-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
