@@ -1,265 +1,444 @@
 {
-  "overview": {
-    "Assessment Participants": {
+  "snapshot": [
+    {
+      "section": "snapshot",
+      "type": "kpi",
+      "label": "Assessment Participants",
       "value": 244,
+      "sub_value": "persons",
       "description": "จำนวนผู้เข้าประเมินสมรรถนะทั้งหมด",
       "sort_order": 1
     },
-    "Online Learners": {
+    {
+      "section": "snapshot",
+      "type": "kpi",
+      "label": "Online Learners",
       "value": 255,
+      "sub_value": "persons",
       "description": "จำนวนผู้เรียนรู้ออนไลน์ทั้งหมด",
       "sort_order": 2
     },
-    "Learning Evidence Records": {
+    {
+      "section": "snapshot",
+      "type": "kpi",
+      "label": "Learning Evidence Records",
       "value": 266,
-      "description": "จำนวนรายการหลักฐานการเรียนรู้",
+      "sub_value": "records",
+      "description": "จำนวนรายการหลักฐานการเรียนรู้จากระบบออนไลน์",
       "sort_order": 3
     },
-    "Departments Covered": {
+    {
+      "section": "snapshot",
+      "type": "kpi",
+      "label": "Departments Covered",
       "value": 10,
+      "sub_value": "departments",
       "description": "จำนวนหน่วยงานที่มีข้อมูลในโครงการ",
       "sort_order": 4
     },
-    "Overall Competency Average": {
+    {
+      "section": "snapshot",
+      "type": "kpi",
+      "label": "Avg Competency Score",
       "value": 25.43,
-      "description": "ค่าเฉลี่ยสมรรถนะรวม",
+      "sub_value": "score",
+      "description": "ค่าเฉลี่ยสมรรถนะรวมจากการประเมิน",
       "sort_order": 5
     },
-    "Average Learning Improvement": {
+    {
+      "section": "snapshot",
+      "type": "kpi",
+      "label": "Self-Reported Improvement",
       "value": 1.85,
-      "description": "ค่าเฉลี่ยพัฒนาการหลังเรียน",
+      "sub_value": "level",
+      "description": "ค่าเฉลี่ยพัฒนาการจากการประเมินตนเองก่อนและหลังเรียน",
       "sort_order": 6
     }
-  },
-  "competency": [
+  ],
+  "framework": [
     {
-      "label": "Digital Literacy",
-      "value": 24.75,
-      "description": "ค่าเฉลี่ยสมรรถนะด้าน Digital Literacy",
+      "section": "framework",
+      "type": "card",
+      "label": "Target Groups",
+      "value": 4,
+      "sub_value": "groups",
+      "description": "กลุ่มเป้าหมายหลักของโครงการ AIGC",
       "sort_order": 11
     },
     {
-      "label": "AI Literacy",
-      "value": 26.39,
-      "description": "ค่าเฉลี่ยสมรรถนะด้าน AI Literacy",
+      "section": "framework",
+      "type": "card",
+      "label": "Assessment Domains",
+      "value": 3,
+      "sub_value": "domains",
+      "description": "Digital Literacy, AI Literacy และ Global Citizenship",
       "sort_order": 12
     },
     {
+      "section": "framework",
+      "type": "card",
+      "label": "Reference Frameworks",
+      "value": 9,
+      "sub_value": "frameworks",
+      "description": "กรอบสมรรถนะและมาตรฐานสากลที่ใช้เป็นฐานในการออกแบบ",
+      "sort_order": 13
+    },
+    {
+      "section": "framework",
+      "type": "card",
+      "label": "Design Logic",
+      "value": "Role-based",
+      "sub_value": "Standards-based",
+      "description": "ออกแบบตามบทบาทของผู้เรียนและเชื่อมโยงกับกรอบมาตรฐาน",
+      "sort_order": 14
+    },
+    {
+      "section": "framework",
+      "type": "card",
+      "label": "Dashboard Purpose",
+      "value": "AI-driven",
+      "sub_value": "Insight Dashboard",
+      "description": "ใช้ข้อมูลเพื่อสนับสนุนการพัฒนา ไม่ใช่เพื่อจัดอันดับหน่วยงาน",
+      "sort_order": 15
+    }
+  ],
+  "competency": [
+    {
+      "section": "competency",
+      "type": "average",
+      "label": "Digital Literacy",
+      "value": 24.75,
+      "sub_value": "score",
+      "description": "ค่าเฉลี่ยสมรรถนะด้าน Digital Literacy",
+      "sort_order": 21
+    },
+    {
+      "section": "competency",
+      "type": "average",
+      "label": "AI Literacy",
+      "value": 26.39,
+      "sub_value": "score",
+      "description": "ค่าเฉลี่ยสมรรถนะด้าน AI Literacy",
+      "sort_order": 22
+    },
+    {
+      "section": "competency",
+      "type": "average",
       "label": "Global Citizenship",
       "value": 25.14,
+      "sub_value": "score",
       "description": "ค่าเฉลี่ยสมรรถนะด้าน Global Citizenship",
-      "sort_order": 13
+      "sort_order": 23
+    }
+  ],
+  "development": [
+    {
+      "section": "development",
+      "type": "lowest_skill",
+      "label": "Digital Literacy",
+      "value": 136,
+      "sub_value": "persons",
+      "description": "จำนวนผู้ประเมินที่มี Digital Literacy เป็นคะแนนต่ำที่สุดของตนเอง",
+      "sort_order": 31
+    },
+    {
+      "section": "development",
+      "type": "lowest_skill",
+      "label": "AI Literacy",
+      "value": 36,
+      "sub_value": "persons",
+      "description": "จำนวนผู้ประเมินที่มี AI Literacy เป็นคะแนนต่ำที่สุดของตนเอง",
+      "sort_order": 32
+    },
+    {
+      "section": "development",
+      "type": "lowest_skill",
+      "label": "Global Citizenship",
+      "value": 72,
+      "sub_value": "persons",
+      "description": "จำนวนผู้ประเมินที่มี Global Citizenship เป็นคะแนนต่ำที่สุดของตนเอง",
+      "sort_order": 33
     }
   ],
   "learning": [
     {
+      "section": "learning",
+      "type": "progress",
       "label": "Average Before Level",
       "value": 2.23,
-      "description": "ค่าเฉลี่ยระดับความรู้ก่อนเรียน",
-      "sort_order": 21
+      "sub_value": "level",
+      "description": "ค่าเฉลี่ยระดับความรู้ก่อนเรียนจากการประเมินตนเอง",
+      "sort_order": 41
     },
     {
+      "section": "learning",
+      "type": "progress",
       "label": "Average After Level",
       "value": 4.08,
-      "description": "ค่าเฉลี่ยระดับความรู้หลังเรียน",
-      "sort_order": 22
+      "sub_value": "level",
+      "description": "ค่าเฉลี่ยระดับความรู้หลังเรียนจากการประเมินตนเอง",
+      "sort_order": 42
     },
     {
+      "section": "learning",
+      "type": "progress",
       "label": "Average Improvement",
       "value": 1.85,
-      "description": "ค่าเฉลี่ยการพัฒนาหลังเรียน",
-      "sort_order": 23
+      "sub_value": "level",
+      "description": "ค่าเฉลี่ยการเปลี่ยนแปลงจากการประเมินตนเอง",
+      "sort_order": 43
     },
     {
-      "label": "Improved Learners (%)",
+      "section": "learning",
+      "type": "progress",
+      "label": "Improved Learners",
       "value": 93.98,
-      "description": "ร้อยละของผู้เรียนที่มีระดับหลังเรียนสูงกว่าก่อนเรียน",
-      "sort_order": 24
-    }
-  ],
-  "developmentArea": [
-    {
-      "label": "Digital Literacy",
-      "value": 136,
-      "description": "จำนวนผู้ที่มี Digital Literacy เป็นด้านที่ควรพัฒนา",
-      "sort_order": 31
-    },
-    {
-      "label": "AI Literacy",
-      "value": 36,
-      "description": "จำนวนผู้ที่มี AI Literacy เป็นด้านที่ควรพัฒนา",
-      "sort_order": 32
-    },
-    {
-      "label": "Global Citizenship",
-      "value": 72,
-      "description": "จำนวนผู้ที่มี Global Citizenship เป็นด้านที่ควรพัฒนา",
-      "sort_order": 33
-    }
-  ],
-  "aiInsight": {
-    "Executive Summary": {
-      "value": "ข้อมูลภาพรวมสะท้อนว่าโครงการ AIGC สามารถสร้างการมีส่วนร่วมของบุคลากรได้ในระดับดี โดยมีผู้เข้าประเมินสมรรถนะ 244 คน ผู้เรียนรู้ออนไลน์ 255 คน และมีหลักฐานการเรียนรู้ 266 รายการ แสดงให้เห็นถึงการขับเคลื่อนการพัฒนาสมรรถนะด้าน Digital Literacy, AI Literacy และ Global Citizenship อย่างต่อเนื่องในระดับองค์กร",
-      "description": "ข้อความสรุปภาพรวมโครงการสำหรับผู้บริหาร",
-      "sort_order": 101
-    },
-    "Competency Insight": {
-      "value": "ผลการประเมินสมรรถนะภาพรวมพบว่า ค่าเฉลี่ย AI Literacy อยู่ในระดับสูงที่สุดเมื่อเทียบกับอีกสองมิติ รองลงมาคือ Global Citizenship และ Digital Literacy อย่างไรก็ตาม เมื่อพิจารณาจากข้อมูล lowest_skill รายบุคคล พบว่า Digital Literacy เป็นด้านที่ปรากฏเป็นจุดพัฒนาอันดับแรกของผู้ประเมินจำนวนมากที่สุด ข้อมูลนี้สะท้อนว่า แม้ภาพรวมคะแนนเฉลี่ยของ Digital Literacy จะอยู่ในระดับใกล้เคียงกับมิติอื่น แต่ยังมีผู้ประเมินจำนวนหนึ่งที่ควรได้รับการสนับสนุนด้านพื้นฐานดิจิทัลอย่างเป็นระบบ โดยเฉพาะทักษะการใช้เครื่องมือดิจิทัลเพื่อทำงานจริง การจัดการข้อมูล และการทำงานร่วมกับเทคโนโลยีอย่างมั่นใจ",
-      "description": "ข้อความวิเคราะห์ภาพรวมสมรรถนะ",
-      "sort_order": 102
-    },
-    "Learning Impact Insight": {
-      "value": "ข้อมูลก่อนและหลังการอบรมเป็นการประเมินตนเองของผู้เรียน จึงควรตีความในฐานะตัวชี้วัดการรับรู้ความก้าวหน้า ไม่ใช่ผลการวัดทักษะโดยตรง อย่างไรก็ตาม ค่าเฉลี่ยก่อนเรียนที่ 2.23 และหลังเรียนที่ 4.08 พร้อมสัดส่วนผู้เรียนที่รายงานว่าตนเองพัฒนาขึ้น 93.98% สะท้อนว่าเนื้อหาออนไลน์ของโครงการช่วยเพิ่มความมั่นใจและการรับรู้ความสามารถของผู้เรียนได้อย่างชัดเจน เมื่อประกอบกับข้อมูลการนำความรู้ไปใช้ในงาน จะสามารถใช้เป็นหลักฐานสนับสนุนการออกแบบกิจกรรมพัฒนาต่อเนื่องได้",
-      "description": "ข้อความวิเคราะห์ผลลัพธ์ก่อนและหลังเรียน",
-      "sort_order": 103
-    }
-  },
-  "recommendations": [
-    {
-      "label": "Strategic Recommendation 1",
-      "value": "ควรพัฒนาหลักสูตรต่อเนื่องด้าน AI for Work เพื่อสนับสนุนให้บุคลากรสามารถนำ AI ไปใช้กับงานประจำได้อย่างเป็นรูปธรรม",
-      "description": "ข้อเสนอแนะเชิงยุทธศาสตร์ข้อที่ 1",
-      "sort_order": 111
-    },
-    {
-      "label": "Strategic Recommendation 2",
-      "value": "ควรจัดทำ Learning Path ตามระดับความพร้อมของบุคลากร เพื่อให้การพัฒนาทักษะมีความต่อเนื่องและเหมาะสมกับพื้นฐานของแต่ละกลุ่ม",
-      "description": "ข้อเสนอแนะเชิงยุทธศาสตร์ข้อที่ 2",
-      "sort_order": 112
-    },
-    {
-      "label": "Strategic Recommendation 3",
-      "value": "ควรส่งเสริมการแลกเปลี่ยนตัวอย่างการประยุกต์ใช้ AI ในงานจริง เพื่อสร้างชุมชนการเรียนรู้และขยายผลภายในองค์กร",
-      "description": "ข้อเสนอแนะเชิงยุทธศาสตร์ข้อที่ 3",
-      "sort_order": 113
-    },
-    {
-      "label": "Strategic Recommendation 4",
-      "value": "ควรใช้ข้อมูลจาก Dashboard เป็นเครื่องมือประกอบการวางแผนกิจกรรมพัฒนาบุคลากรในระยะต่อไป โดยเน้นการสนับสนุนเชิงระบบมากกว่าการเปรียบเทียบรายหน่วยงาน",
-      "description": "ข้อเสนอแนะเชิงยุทธศาสตร์ข้อที่ 4",
-      "sort_order": 114
+      "sub_value": 0,
+      "description": "ร้อยละของผู้เรียนที่รายงานว่าระดับหลังเรียนสูงกว่าก่อนเรียน",
+      "sort_order": 44
     }
   ],
   "groups": {
     "assessment": [
       {
+        "section": "group",
+        "type": "assessment",
         "label": "Executive",
         "value": 0,
+        "sub_value": "persons",
         "description": "จำนวนผู้เข้าประเมินในกลุ่ม Executive",
-        "sort_order": 301
+        "sort_order": 51
       },
       {
+        "section": "group",
+        "type": "assessment",
         "label": "Lecturers",
         "value": 0,
+        "sub_value": "persons",
         "description": "จำนวนผู้เข้าประเมินในกลุ่ม Lecturers",
-        "sort_order": 302
+        "sort_order": 52
       },
       {
+        "section": "group",
+        "type": "assessment",
         "label": "Support Staff",
-        "value": 167,
+        "value": 135,
+        "sub_value": "persons",
         "description": "จำนวนผู้เข้าประเมินในกลุ่ม Support Staff",
-        "sort_order": 303
+        "sort_order": 53
       },
       {
+        "section": "group",
+        "type": "assessment",
         "label": "Student",
-        "value": 74,
+        "value": 77,
+        "sub_value": "persons",
         "description": "จำนวนผู้เข้าประเมินในกลุ่ม Student",
-        "sort_order": 304
+        "sort_order": 54
       }
     ],
     "learning": [
       {
+        "section": "group",
+        "type": "learning",
         "label": "Executive",
         "value": 0,
+        "sub_value": "persons",
         "description": "จำนวนผู้เรียนออนไลน์ในกลุ่ม Executive",
-        "sort_order": 311
+        "sort_order": 61
       },
       {
+        "section": "group",
+        "type": "learning",
         "label": "Lecturers",
         "value": 0,
+        "sub_value": "persons",
         "description": "จำนวนผู้เรียนออนไลน์ในกลุ่ม Lecturers",
-        "sort_order": 312
+        "sort_order": 62
       },
       {
+        "section": "group",
+        "type": "learning",
         "label": "Support Staff",
-        "value": 159,
+        "value": 151,
+        "sub_value": "persons",
         "description": "จำนวนผู้เรียนออนไลน์ในกลุ่ม Support Staff",
-        "sort_order": 313
+        "sort_order": 63
       },
       {
+        "section": "group",
+        "type": "learning",
         "label": "Student",
-        "value": 104,
+        "value": 106,
+        "sub_value": "persons",
         "description": "จำนวนผู้เรียนออนไลน์ในกลุ่ม Student",
-        "sort_order": 314
+        "sort_order": 64
       }
     ]
   },
   "themes": {
     "keyLearning": [
       {
+        "section": "theme",
+        "type": "key_learning",
         "label": "AI for Work",
         "value": 61,
-        "description": "ผู้เรียนรู้เรื่องการใช้ AI เพื่อสนับสนุนการทำงาน",
-        "sort_order": 201
+        "sub_value": "mentions",
+        "description": "ประเด็นการเรียนรู้เกี่ยวกับการใช้ AI สนับสนุนการทำงาน",
+        "sort_order": 71
       },
       {
+        "section": "theme",
+        "type": "key_learning",
         "label": "Digital Productivity",
         "value": 72,
-        "description": "ผู้เรียนรู้เรื่องเครื่องมือดิจิทัลเพื่อเพิ่มประสิทธิภาพการทำงาน",
-        "sort_order": 202
+        "sub_value": "mentions",
+        "description": "ประเด็นการเรียนรู้เกี่ยวกับเครื่องมือดิจิทัลเพื่อเพิ่มประสิทธิภาพ",
+        "sort_order": 72
       },
       {
+        "section": "theme",
+        "type": "key_learning",
         "label": "Data & Dashboard",
         "value": 90,
-        "description": "ผู้เรียนรู้เรื่องข้อมูล การวิเคราะห์ และ Dashboard",
-        "sort_order": 203
+        "sub_value": "mentions",
+        "description": "ประเด็นการเรียนรู้เกี่ยวกับข้อมูล การวิเคราะห์ และ Dashboard",
+        "sort_order": 73
       },
       {
+        "section": "theme",
+        "type": "key_learning",
         "label": "Responsible AI",
         "value": 14,
-        "description": "ผู้เรียนรู้เรื่องจริยธรรม ความปลอดภัย และการใช้ AI อย่างรับผิดชอบ",
-        "sort_order": 204
+        "sub_value": "mentions",
+        "description": "ประเด็นการเรียนรู้เกี่ยวกับจริยธรรม ความปลอดภัย และการใช้ AI อย่างรับผิดชอบ",
+        "sort_order": 74
       }
     ],
     "application": [
       {
+        "section": "theme",
+        "type": "application",
         "label": "Work Process Improvement",
         "value": 247,
-        "description": "การนำความรู้ไปปรับปรุงกระบวนการทำงาน",
-        "sort_order": 211
+        "sub_value": "mentions",
+        "description": "ประเด็นการนำความรู้ไปใช้ปรับปรุงกระบวนการทำงาน",
+        "sort_order": 81
       },
       {
+        "section": "theme",
+        "type": "application",
         "label": "Communication & Content Creation",
         "value": 24,
-        "description": "การนำความรู้ไปใช้ด้านการสื่อสาร การเขียน และการสร้างเนื้อหา",
-        "sort_order": 212
+        "sub_value": "mentions",
+        "description": "ประเด็นการนำความรู้ไปใช้ด้านการสื่อสาร การเขียน และการสร้างเนื้อหา",
+        "sort_order": 82
       },
       {
+        "section": "theme",
+        "type": "application",
         "label": "Data Analysis & Reporting",
         "value": 171,
-        "description": "การนำความรู้ไปใช้วิเคราะห์ข้อมูลและจัดทำรายงาน",
-        "sort_order": 213
+        "sub_value": "mentions",
+        "description": "ประเด็นการนำความรู้ไปใช้วิเคราะห์ข้อมูลและจัดทำรายงาน",
+        "sort_order": 83
       }
     ],
     "futureLearning": [
       {
+        "section": "theme",
+        "type": "future_learning",
         "label": "Prompt Engineering",
         "value": 11,
+        "sub_value": "mentions",
         "description": "ความต้องการเรียนรู้ด้านการเขียนคำสั่ง AI",
-        "sort_order": 221
+        "sort_order": 91
       },
       {
+        "section": "theme",
+        "type": "future_learning",
         "label": "Data Analysis with AI",
         "value": 66,
+        "sub_value": "mentions",
         "description": "ความต้องการเรียนรู้ด้านการวิเคราะห์ข้อมูลด้วย AI",
-        "sort_order": 222
+        "sort_order": 92
       },
       {
+        "section": "theme",
+        "type": "future_learning",
         "label": "Dashboard & Automation",
         "value": 13,
+        "sub_value": "mentions",
         "description": "ความต้องการเรียนรู้ด้าน Dashboard และ Automation",
-        "sort_order": 223
+        "sort_order": 93
       }
     ]
-  }
+  },
+  "insights": [
+    {
+      "section": "insight",
+      "type": "summary",
+      "label": "Executive Summary",
+      "value": "โครงการ AIGC แสดงให้เห็นถึงการเริ่มต้นสร้างฐานข้อมูลเชิงประจักษ์สำหรับการพัฒนาสมรรถนะบุคลากร โดยมีทั้งข้อมูลการประเมินสมรรถนะ ข้อมูลการเรียนรู้ออนไลน์ และหลักฐานการนำความรู้ไปใช้ ซึ่งสามารถใช้เป็นฐานในการออกแบบกิจกรรมพัฒนาบุคลากรระยะต่อไปได้อย่างเป็นระบบ",
+      "sub_value": "-",
+      "description": "ข้อความสรุปภาพรวมสำหรับผู้บริหาร",
+      "sort_order": 101
+    },
+    {
+      "section": "insight",
+      "type": "competency",
+      "label": "Competency Insight",
+      "value": "ผลการประเมินสมรรถนะภาพรวมพบว่า AI Literacy มีค่าเฉลี่ยสูงที่สุดเมื่อเทียบกับอีกสองมิติ รองลงมาคือ Global Citizenship และ Digital Literacy อย่างไรก็ตาม ข้อมูล lowest skill รายบุคคลสะท้อนว่า Digital Literacy เป็นด้านที่ปรากฏเป็นจุดพัฒนาอันดับแรกของผู้ประเมินจำนวนมากที่สุด จึงควรตีความร่วมกันทั้งระดับค่าเฉลี่ยภาพรวมและช่องว่างรายบุคคล",
+      "sub_value": "-",
+      "description": "ข้อความวิเคราะห์สมรรถนะ",
+      "sort_order": 102
+    },
+    {
+      "section": "insight",
+      "type": "learning",
+      "label": "Learning Progress Insight",
+      "value": "ข้อมูลก่อนและหลังการเรียนรู้เป็นการประเมินตนเองของผู้เรียน จึงควรตีความในฐานะตัวชี้วัดการรับรู้ความก้าวหน้า ไม่ใช่ผลการวัดทักษะโดยตรง อย่างไรก็ตาม ค่าเฉลี่ยก่อนเรียนที่ 2.23 และหลังเรียนที่ 4.08 พร้อมสัดส่วนผู้เรียนที่รายงานว่าตนเองพัฒนาขึ้น 93.98% สะท้อนว่าเนื้อหาออนไลน์ช่วยเพิ่มความมั่นใจและการรับรู้ความสามารถของผู้เรียนได้ชัดเจน",
+      "sub_value": "-",
+      "description": "ข้อความวิเคราะห์พัฒนาการการเรียนรู้",
+      "sort_order": 103
+    }
+  ],
+  "recommendations": [
+    {
+      "section": "recommendation",
+      "type": "strategy",
+      "label": "Recommendation 1",
+      "value": "พัฒนาหลักสูตร AI for Work ที่เชื่อมโยงกับงานจริงของแต่ละกลุ่มเป้าหมาย เพื่อให้การเรียนรู้ไม่หยุดอยู่ที่ความรู้เครื่องมือ แต่ต่อยอดสู่การปรับวิธีทำงาน",
+      "sub_value": "-",
+      "description": "ข้อเสนอแนะเชิงกลยุทธ์",
+      "sort_order": 111
+    },
+    {
+      "section": "recommendation",
+      "type": "strategy",
+      "label": "Recommendation 2",
+      "value": "เสริมฐาน Digital Literacy สำหรับกลุ่มที่ยังมีช่องว่างรายบุคคล โดยเน้นทักษะการใช้เครื่องมือดิจิทัล การจัดการข้อมูล และการทำงานร่วมกับเทคโนโลยี",
+      "sub_value": "-",
+      "description": "ข้อเสนอแนะเชิงกลยุทธ์",
+      "sort_order": 112
+    },
+    {
+      "section": "recommendation",
+      "type": "strategy",
+      "label": "Recommendation 3",
+      "value": "ออกแบบ Learning Path ตามระดับความพร้อมของผู้เรียน โดยแยกเส้นทางพื้นฐาน ระดับกลาง และการต่อยอดสู่การใช้ AI เพื่อวิเคราะห์ข้อมูลหรือสร้าง Dashboard",
+      "sub_value": "-",
+      "description": "ข้อเสนอแนะเชิงกลยุทธ์",
+      "sort_order": 113
+    },
+    {
+      "section": "recommendation",
+      "type": "strategy",
+      "label": "Recommendation 4",
+      "value": "ใช้ Dashboard เป็นเครื่องมือสนับสนุนการวางแผนและติดตามการพัฒนาในภาพรวม โดยหลีกเลี่ยงการนำเสนอในลักษณะจัดอันดับหรือเปรียบเทียบหน่วยงาน",
+      "sub_value": "-",
+      "description": "ข้อเสนอแนะเชิงกลยุทธ์",
+      "sort_order": 114
+    }
+  ]
 }
