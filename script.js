@@ -5,6 +5,8 @@ async function loadDashboard() {
   renderKPIs(data.overview);
   renderCompetencyChart(data.competency);
   renderDevelopmentChart(data.developmentArea);
+  renderGroupChart("assessmentGroupChart", data.groups.assessment);
+  renderGroupChart("learningGroupChart", data.groups.learning);
   renderLearningChart(data.learning);
   renderThemeChart("keyLearningChart", data.themes.keyLearning);
   renderThemeChart("applicationChart", data.themes.application);
@@ -177,6 +179,36 @@ function renderRecommendations(recommendations) {
     container.appendChild(div);
   });
 }
+
+function renderGroupChart(canvasId, items) {
+  const ctx = document.getElementById(canvasId);
+
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: items.map(item => item.label),
+      datasets: [{
+        label: "Participants",
+        data: items.map(item => item.value),
+        borderWidth: 1,
+        borderRadius: 10
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false }
+      },
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+}
+
+
 
 loadDashboard().catch(error => {
   console.error("Dashboard loading error:", error);
